@@ -89,7 +89,7 @@
 		</dependency>
 	</dependencies>
 	<scm>
-  	<developerConnection>scm:git:git@github.com:maximecohen2/java_b3_dc_maven.git</developerConnection>
+  	<developerConnection>scm:git:git@github.com-epsi:maximecohen2/java_b3_dc_maven.git</developerConnection>
 	</scm>
 
 	<build>
