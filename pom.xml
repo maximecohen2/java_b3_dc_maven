@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.epsi</groupId>
 	<!-- artifactId correspond au nom de votre application, n'hésitez pas à
 		changer la valeur par défaut -->
 	<artifactId>fileattente</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<!-- précisez le nom et l'email de chaque membre de votre groupe -->
@@ -90,7 +89,7 @@
 	</dependencies>
 	<scm>
   	<developerConnection>scm:git:git@github.com-epsi:maximecohen2/java_b3_dc_maven.git</developerConnection>
-	</scm>
+  </scm>
 
 	<build>
 		<finalName>${artifactId}</finalName>
@@ -106,9 +105,12 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven­release­plugin</artifactId>
+				<artifactId>maven-­release-­plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
+					<goals>
+						compile
+					</goals>
 				</configuration>
 			</plugin>
 		</plugins>
